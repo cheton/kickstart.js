@@ -1,5 +1,5 @@
 {
-    "name": "kickstartjs",
+    "name": "kickstart-js",
     "version": "1.0.0",
     "description": "Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.",
     "author": "Cheton Wu <cheton@gmail.com>",
