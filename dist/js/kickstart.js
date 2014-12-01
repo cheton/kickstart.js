@@ -1,4 +1,4 @@
-/*! kickstart - v1.0.0 - 2014-10-16 */(function(root, factory) {
+/*! kickstart - v1.0.0 - 2014-12-01 */(function(root, factory) {
     if (typeof define === "function" && define.amd) {
         define([ "jquery", "exports" ], function($, exports) {
             root.Kickstart = factory(root, exports, $);
