@@ -1,0 +1,38 @@
+{
+    "name": "kickstart",
+    "version": "1.0.0",
+    "description": "Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.",
+    "author": "Cheton Wu <cheton@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:cheton/Kickstart.js.git"
+    },
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.1.x"
+    },
+    "keywords": [
+        "kickstart",
+        "bower",
+        "grunt",
+        "commonjs",
+        "amd",
+        "umd"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+        "grunt": "0.4.x",
+        "grunt-contrib-compass": "latest",
+        "grunt-contrib-compress": "latest",
+        "grunt-contrib-copy": "latest",
+        "grunt-contrib-cssmin": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-qunit": "latest",
+        "grunt-contrib-uglify": "latest"
+    },
+    "scripts": {
+        "build": "grunt",
+        "test": "grunt test"
+    }
+}

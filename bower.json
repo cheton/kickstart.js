@@ -1,0 +1,11 @@
+{
+    "name": "kickstart"
+    "version": "1.0.0",
+    "main": [
+        "dist/js/kickstart.js",
+        "dist/css/kickstart.css"
+    ],
+    "dependencies": {
+        "jquery": ">=1.7.0"
+    }
+}

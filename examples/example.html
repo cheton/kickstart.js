@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Kickstart</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../dist/css/kickstart.min.css">
+</head>
+<body>
+<div class="kickstart">Kickstart</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="../dist/js/kickstart.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    var options = {
+        'name': 'foo bar'
+    };
+    Kickstart.init(options, function(kickstart) {
+        // Add your stuff here
+
+        console.log(kickstart.toString());
+    });
+});
+</script>
+</body>
+</html>
