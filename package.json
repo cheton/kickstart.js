@@ -1,11 +1,11 @@
 {
     "name": "kickstart-js",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.",
     "author": "Cheton Wu <cheton@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "git@github.com:cheton/Kickstart.js.git"
+        "url": "git@github.com:cheton/kickstart.js.git"
     },
     "engines": {
         "node": "0.10.x",
