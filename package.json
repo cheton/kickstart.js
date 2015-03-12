@@ -1,38 +1,46 @@
 {
-    "name": "kickstart-js",
-    "version": "1.0.1",
-    "description": "Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.",
-    "author": "Cheton Wu <cheton@gmail.com>",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:cheton/kickstart.js.git"
-    },
-    "engines": {
-        "node": "0.10.x",
-        "npm": "1.1.x"
-    },
-    "keywords": [
-        "kickstart",
-        "bower",
-        "grunt",
-        "commonjs",
-        "amd",
-        "umd"
-    ],
-    "dependencies": {
-    },
-    "devDependencies": {
-        "grunt": "0.4.x",
-        "grunt-contrib-compass": "latest",
-        "grunt-contrib-compress": "latest",
-        "grunt-contrib-copy": "latest",
-        "grunt-contrib-cssmin": "latest",
-        "grunt-contrib-jshint": "latest",
-        "grunt-contrib-qunit": "latest",
-        "grunt-contrib-uglify": "latest"
-    },
-    "scripts": {
-        "build": "grunt",
-        "test": "grunt test"
-    }
+  "name": "kickstart-js",
+  "version": "1.1.0",
+  "description": "Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.",
+  "author": "Cheton Wu <cheton@gmail.com>",
+  "scripts": {
+    "test": "npm run grunt && npm run gulp && npm run tap-test",
+    "grunt": "grunt",
+    "gulp": "gulp",
+    "tap-test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cheton/kickstart.js.git"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.1.x"
+  },
+  "keywords": [
+    "kickstart",
+    "bower",
+    "grunt",
+    "gulp",
+    "commonjs",
+    "amd",
+    "umd"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-csslint": "^0.4.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-text-replace": "^0.4.0",
+    "gulp": "^3.8.11",
+    "require-dir": "^0.1.0",
+    "tap": "^0.7.1"
+  }
 }

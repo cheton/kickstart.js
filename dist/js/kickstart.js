@@ -1,4 +1,5 @@
-/*! kickstart - v1.0.0 - 2014-12-01 */(function(root, factory) {
+/*! kickstart-js - v1.1.0 - 2015-03-12 */
+(function(root, factory) {
     if (typeof define === "function" && define.amd) {
         define([ "jquery", "exports" ], function($, exports) {
             root.Kickstart = factory(root, exports, $);
@@ -10,7 +11,7 @@
     }
 })(this, function(root, Kickstart, $) {
     var _Kickstart = root.Kickstart;
-    Kickstart.VERSION = "1.0.0";
+    Kickstart.VERSION = "1.1.0";
     Kickstart.noConflict = function() {
         root.Kickstart = _Kickstart;
         return this;

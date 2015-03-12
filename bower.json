@@ -1,9 +1,13 @@
 {
-    "name": "kickstart"
-    "version": "1.0.0",
+    "name": "kickstart-js",
+    "version": "1.1.0",
     "main": [
         "dist/js/kickstart.js",
-        "dist/css/kickstart.css"
+        "dist/js/kickstart.min.js",
+        "dist/css/kickstart.css",
+        "dist/css/kickstart.min.css",
+        "dist/i18n/*",
+        "dist/images/*"
     ],
     "dependencies": {
         "jquery": ">=1.7.0"

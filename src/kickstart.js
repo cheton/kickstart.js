@@ -23,7 +23,7 @@
     var _Kickstart = root.Kickstart;
 
     // Current version of the library. Keep in sync with 'package.json'.
-    Kickstart.VERSION = '1.0.0';
+    Kickstart.VERSION = '__VERSION__';
 
     // Runs in *noConflict* mode, returning the `Kickstart` variable to its previous owner.
     // Returns a reference to this object.
@@ -48,7 +48,7 @@
             }
         }
         return target;
-    }
+    };
 
     var extend = $ ? $.extend : _extend;
 
