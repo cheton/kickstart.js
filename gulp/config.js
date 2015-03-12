@@ -37,12 +37,20 @@ module.exports = {
         ],
         options: require('../config/jshint')
     },
-    uglify: {
-        src: 'src/kickstart.js',
-        dest: 'dist/js/'
+    replace: {
+        src: ['dist/**/*.{js,css}'],
+        dest: 'dist/',
+        replacements: [{
+            from: '__VERSION__',
+            to: pkg.version
+        }]
     },
     stylus: {
         src: 'src/kickstart.styl',
         dest: 'dist/css/'
+    },
+    uglify: {
+        src: 'src/kickstart.js',
+        dest: 'dist/js/'
     }
 };

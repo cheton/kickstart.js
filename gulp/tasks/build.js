@@ -6,6 +6,7 @@ module.exports = function(options) {
         runSequence('clean',
             'copy',
             ['build-scripts', 'build-styles'],
+            'replace',
             callback
         );
     });
