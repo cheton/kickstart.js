@@ -6,7 +6,14 @@ var csslintConfig = require('../config/csslint');
 module.exports = {
     pkg: pkg,
     meta: {
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+        banner: [
+            '/**',
+            ' * <%= pkg.name %> - <%= pkg.description %>',
+            ' * @version v<%= pkg.version %>',
+            ' * @link <%= pkg.homepage %>',
+            ' * @license <%= pkg.license %>',
+            ' */',
+            ''].join('\n')
     },
     clean: {
         all: [
@@ -76,12 +83,13 @@ module.exports = {
     uglify: {
         options: {
             banner: '<%= meta.banner %>',
-            mangle: false
         },
         debug: {
             options: {
                 beautify: true,
-                compress: false
+                preserveComments: true,
+                compress: false,
+                mangle: false
             },
             files: {
                 'dist/js/kickstart.js': 'src/kickstart.js'
@@ -89,8 +97,9 @@ module.exports = {
         },
         dist: {
             options: {
-                beautify: false,
-                compress: true
+                preserveComments: false,
+                compress: true,
+                mangle: true
             },
             files: {
                 'dist/js/kickstart.min.js': 'src/kickstart.js'
