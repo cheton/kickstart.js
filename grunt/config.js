@@ -23,7 +23,6 @@ module.exports = {
     csslint: {
         options: csslintConfig,
         all: [
-            'src/**/*.css',
             'dist/**/*.css'
         ]
     },
