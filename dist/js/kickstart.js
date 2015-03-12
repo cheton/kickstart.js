@@ -21,7 +21,7 @@
     // Save the previous value of the 'Kickstart' variable, so that it can be restored later on, if 'noConflict' is used.
     var _Kickstart = root.Kickstart;
     // Current version of the library. Keep in sync with 'package.json'.
-    Kickstart.VERSION = "__VERSION__";
+    Kickstart.VERSION = "1.1.0";
     // Runs in *noConflict* mode, returning the `Kickstart` variable to its previous owner.
     // Returns a reference to this object.
     Kickstart.noConflict = function() {
