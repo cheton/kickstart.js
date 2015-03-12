@@ -2,10 +2,8 @@
     "name": "kickstart-js",
     "version": "1.1.0",
     "main": [
-        "dist/js/kickstart.js",
-        "dist/js/kickstart.min.js",
-        "dist/css/kickstart.css",
-        "dist/css/kickstart.min.css",
+        "dist/js/*",
+        "dist/css/*",
         "dist/i18n/*",
         "dist/images/*"
     ],
