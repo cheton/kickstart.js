@@ -1,7 +1,15 @@
-/*! kickstart-js - v1.1.0 - 2015-03-12 */
+/**
+ * kickstart-js - Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.
+ * @version v1.1.0
+ * @link https://github.com/cheton/kickstart.js
+ * @license MIT
+ */
 (function(root, factory) {
+    // Set up Kickstart appropriately for the environment. Start with AMD.
     if (typeof define === "function" && define.amd) {
         define([ "jquery", "exports" ], function($, exports) {
+            // Export global even in AMD case in case this script is loaded with
+            // others that may still expect a global Kickstart.
             root.Kickstart = factory(root, exports, $);
         });
     } else if (typeof exports !== "undefined") {
@@ -10,12 +18,17 @@
         root.Kickstart = factory(root, {}, root.jQuery || root.Zepto || root.$);
     }
 })(this, function(root, Kickstart, $) {
+    // Save the previous value of the 'Kickstart' variable, so that it can be restored later on, if 'noConflict' is used.
     var _Kickstart = root.Kickstart;
-    Kickstart.VERSION = "1.1.0";
+    // Current version of the library. Keep in sync with 'package.json'.
+    Kickstart.VERSION = "__VERSION__";
+    // Runs in *noConflict* mode, returning the `Kickstart` variable to its previous owner.
+    // Returns a reference to this object.
     Kickstart.noConflict = function() {
         root.Kickstart = _Kickstart;
         return this;
     };
+    // defaults
     var options = {
         name: "Kickstart"
     };
@@ -37,6 +50,7 @@
             o = {};
         }
         o = o || {};
+        // override defaults with passed in options
         extend(options, o);
         if (typeof cb === "function") {
             cb(Kickstart);

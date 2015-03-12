@@ -1,4 +1,9 @@
-/*! kickstart-js - v1.1.0 - 2015-03-12 */
+/**
+ * kickstart-js - Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.
+ * @version v1.1.0
+ * @link https://github.com/cheton/kickstart.js
+ * @license MIT
+ */
 .kickstart {
   background: #333;
   color: #ddd;
