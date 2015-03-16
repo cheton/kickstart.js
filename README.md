@@ -13,4 +13,4 @@ Using a Universal Module Definition (UMD) pattern to create a library or module 
 
 Copyright (c) 2014-2015 Cheton Wu
 
-Licensed under the [MIT License](https://github.com/cheton/browserify-css/blob/master/LICENSE).
+Licensed under the [MIT License](https://github.com/cheton/kickstart.js/blob/master/LICENSE).
