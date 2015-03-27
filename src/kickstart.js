@@ -5,7 +5,7 @@
         define(['jquery', 'exports'], function($, exports) {
             // Export global even in AMD case in case this script is loaded with
             // others that may still expect a global Kickstart.
-            root.Kickstart = factory(root, exports, $);
+            return (root.Kickstart = factory(root, exports, $));
         });
 
     // Next for Node.js or CommonJS. jQuery may not be needed as a module.
