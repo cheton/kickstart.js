@@ -1,6 +1,6 @@
 /**
  * kickstart-js - Using a Universal Module Definition (UMD) pattern to create a library or module that offers compatibility with the most popular script loaders of the day.
- * @version v1.1.2
+ * @version v1.1.3
  * @link http://cheton.github.io/kickstart.js/
  * @license MIT
  */
@@ -21,7 +21,7 @@
     // Save the previous value of the 'Kickstart' variable, so that it can be restored later on, if 'noConflict' is used.
     var _Kickstart = root.Kickstart;
     // Current version of the library. Keep in sync with 'package.json'.
-    Kickstart.VERSION = "1.1.2";
+    Kickstart.VERSION = "1.1.3";
     // Runs in *noConflict* mode, returning the `Kickstart` variable to its previous owner.
     // Returns a reference to this object.
     Kickstart.noConflict = function() {
